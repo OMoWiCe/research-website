@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from './App.module.css';
-import Navbar from './Components/Navbar/Navbar.jsx';
-import { Home } from './components/Home.jsx';
-import { About } from './components/Aboout.jsx';
-import { Demo } from './components/Demo.jsx';
-import { Team } from './components/Team.jsx';
-import Footer from "./components/Footer";
+import './App.css';
+import Navbar from './Components/Navbar.jsx';
+import { Home } from './Components/Home.jsx';
+import { About } from './Components/About.jsx';
+import { Demo } from './Components/Demo.jsx';
+import { Team } from './Components/Team.jsx';
+import Footer from "./Components/Footer.jsx";
 
 
 function App() {
