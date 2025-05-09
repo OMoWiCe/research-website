@@ -1,79 +1,180 @@
 .about-section {
-  background-color: #0a0a0a;
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--text-dark);
   padding: 60px 40px;
   border-radius: 20px;
   margin: 60px auto;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  font-family: sans-serif;
+  gap: 40px;
+  font-family: "Outfit", sans-serif;
+  position: relative;
 }
 
 .about-heading {
-  font-size: 32px;
+  font-size: var(--font-4xl);
   font-weight: bold;
-  border-bottom: 2px solid #444;
-  padding-bottom: 10px;
+  border-bottom: 2px solid var(--card-border);
+  padding-bottom: 16px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.about-heading::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background: var(--primary-color);
+  bottom: -3px;
+  left: 0;
+  border-radius: 2px;
 }
 
 .about-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 24px;
 }
 
 .about-card {
   flex: 1 1 30%;
   min-width: 250px;
-  background: linear-gradient(to bottom right, #0f172a, #071937);
-  padding: 20px;
+  background: var(--card-bg);
+  padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 20px var(--card-shadow);
+  transition: all var(--transition-medium);
+  border: 1px solid var(--card-border);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.about-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary-color);
 }
 
 .about-title {
-  font-size: 20px;
+  font-size: var(--font-xl);
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-title::before {
+  content: attr(data-emoji);
+  font-size: var(--font-2xl);
+  margin-left: -10px;
 }
 
 .about-list {
   margin: 0;
-  padding-left: 18px;
-  line-height: 1.7;
+  padding-left: 0px;
+  line-height: 1.2;
+  color: var(--text-gray);
+  font-size: var(--font-md);
+}
+
+.about-list li {
+  margin-bottom: 15px;
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+  list-style: none;
+}
+
+.about-list li::marker {
+  color: var(--primary-color);
 }
 
 .tech-btn {
-  background-color: #2563eb;
-  color: #fff;
+  background-color: var(--bg-light-gray);
+  color: var(--text-gray);
   border: none;
-  border-radius: 8px;
-  padding: 8px 14px;
-  margin: 6px;
-  cursor: pointer;
-  font-size: 14px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 8px 5px;
+  font-size: var(--font-md);
+  font-weight: 500;
   text-decoration: none;
   display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.tech-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
 }
 
 .about-text {
-  line-height: 1.6;
+  line-height: 1.8;
+  color: var(--text-gray);
+  font-size: var(--font-md);
 }
 
 .github-link {
-  font-size: 14px;
-  margin-top: 12px;
+  font-size: var(--font-md);
+  margin-top: 20px;
+  margin-bottom: -5px;
   text-align: center;
+  font-weight: 600;
 }
 
 .github-link a {
-  color: #60a5fa;
-  text-decoration: underline;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 5px;
+  display: inline-flex;
+  align-items: center;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  position: relative;
+}
+
+.github-link a:hover {
+  color: var(--btn-hover);
+}
+
+.github-link a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0px;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width var(--transition-medium);
+}
+.github-link a:hover::after {
+  width: 100%;
 }
 
 .tech-container {
   text-align: center;
+  margin-top: 15px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.9;
+  }
 }

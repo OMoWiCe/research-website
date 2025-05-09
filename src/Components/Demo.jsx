@@ -11,9 +11,9 @@ export const Demo = () => {
         <div className="demo-text-box">
           <p className="demo-paragraph">
             Our interactive demo presents a live dashboard visualizing real-time
-            occupancy data from test locations. Users can observe metrics such
-            as estimated counts, trends, and device activity over time, with
-            clear and intuitive graphical representations.
+            occupancy data from test location. Users can observe metrics such as
+            estimated counts, trends, and turnover time, with clear and
+            intuitive graphical representations.
           </p>
 
           <a

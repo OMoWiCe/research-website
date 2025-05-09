@@ -27,7 +27,7 @@ export const Team = () => {
     },
     {
       name: "V. O. Gallage",
-      role: "Team Leader",
+      role: "Team Member",
       image: "https://placehold.co/400x400",
       link: "https://sasindu.dev",
     },

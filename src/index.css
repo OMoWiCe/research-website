@@ -1,9 +1,102 @@
+@import "./css/themes.css";
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  background-color: #0a0a0a; /* Match your section background */
-  color: white;
-  font-family: "Outfit", Arial, Helvetica, sans-serif 
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+}
+* {
+  scroll-margin-top: 100px;
 }
 
+/* Base styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-dark);
+  font-weight: 700;
+  margin-top: 0;
+}
+
+p {
+  color: var(--text-gray);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--btn-hover);
+}
+
+button {
+  cursor: pointer;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+.scale-in {
+  animation: scaleIn 0.4s ease-out;
+}
+
+/* Basic animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Section container */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* For smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

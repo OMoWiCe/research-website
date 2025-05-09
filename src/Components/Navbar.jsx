@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <a href="#home" className="navbar-logo">
-          oMoWiCe
+          OMoWiCe
         </a>
 
         <button

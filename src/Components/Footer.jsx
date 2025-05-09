@@ -7,7 +7,8 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        © {new Date().getFullYear()} oMoWiCe. All rights reserved.
+        © {new Date().getFullYear()} OMoWiCe
+        <span>|</span>
         <span className="footer-link" onClick={() => setShowPolicy(true)}>
           Privacy Policy
         </span>
@@ -19,8 +20,8 @@ const Footer = () => {
             <h3>🔒 Privacy Policy</h3>
             <p className="modal-content">
               We value your privacy. This project does not store personal data
-              and is strictly used for academic and research purposes. Any data
-              shown is simulated or anonymized.
+              and is strictly used for academic and research purposes only. Any
+              data shown is simulated or anonymized.
             </p>
             <button className="close-btn" onClick={() => setShowPolicy(false)}>
               Close

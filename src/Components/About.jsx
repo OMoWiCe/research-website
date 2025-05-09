@@ -35,9 +35,9 @@ export const About = () => {
         <div className="about-card">
           <h3 className="about-title">📘 Disclaimer</h3>
           <p className="about-text">
-            This dashboard is for academic research. Occupancy visualizations
-            rely on simulation environments and may not reflect live or
-            production-grade accuracy.
+            This dashboard is for academic research purposes only. Occupancy
+            visualizations rely on selected testing environments and may not
+            reflect live or production-grade accuracy.
           </p>
         </div>
       </div>
@@ -74,25 +74,19 @@ export const About = () => {
           <h3 className="about-title">🛠️ Technology Used</h3>
           <div className="tech-container">
             {technologies.map((tech) => (
-              <a
-                key={tech.name}
-                href={tech.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="tech-btn"
-              >
+              <div key={tech.name} className="tech-btn">
                 {tech.name}
-              </a>
+              </div>
             ))}
           </div>
           <p className="github-link">
             GitHub:{" "}
             <a
-              href="https://github.com/your-repo"
+              href="https://github.com/orgs/OMoWiCe/repositories"
               target="_blank"
               rel="noopener noreferrer"
             >
-              github.com/your-repo
+              OMoWiCe/repositories ↗
             </a>
           </p>
         </div>
@@ -105,7 +99,7 @@ export const About = () => {
           <ul className="about-list">
             <li>Real-time occupancy insights</li>
             <li>Wi-Fi and cellular traffic-based estimation</li>
-            <li>Public and admin dashboards with live data</li>
+            <li>Public dashboards with live data</li>
             <li>RESTful API for integration</li>
             <li>Privacy-first approach (no personal data captured)</li>
           </ul>
@@ -114,9 +108,9 @@ export const About = () => {
         <div className="about-card">
           <h3 className="about-title">🔮 Future Work</h3>
           <ul className="about-list">
-            <li>Apply machine learning for predictive occupancy modeling</li>
-            <li>Enhance device filtering</li>
-            <li>Launch mobile app for real-time user access</li>
+            <li>Evaluate the viability of using newer technologies (LTE/5G)</li>
+            <li>Apply Machine Learning for predictive occupancy modeling</li>
+            <li>Plan for commercial implementation in developing countries</li>
           </ul>
         </div>
       </div>

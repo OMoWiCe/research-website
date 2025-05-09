@@ -3,8 +3,7 @@ import "../css/Home.css";
 
 export const Home = () => {
   return (
-    <section className="home-section">
-      <div className="abstract-bg" />
+    <section className="home-section" id="home">
       <div className="home-container">
         <div className="home-content">
           <h1 className="home-title">
@@ -13,9 +12,9 @@ export const Home = () => {
             <span className="accent-text">Cellular</span>
           </h1>
           <p className="home-description">
-            Welcome to Our Research on Occupancy Monitoring Discover how we're
-            transforming real-time space awareness using passive Wi-Fi and
-            cellular signal analysis to deliver scalable, privacy-respecting
+            A Research on Occupancy Monitoring Discover how we're transforming
+            real-time space awareness using passive Wi-Fi and cellular signal
+            analysis to deliver scalable, privacy-respecting and cost-effective
             occupancy monitoring systems.
           </p>
         </div>
