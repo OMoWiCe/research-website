@@ -17,7 +17,7 @@ export const Demo = () => {
           </p>
 
           <a
-            href="https://your-dashboard-link.com"
+            href="https://dashboard.omowice.live/"
             target="_blank"
             rel="noopener noreferrer"
             className="demo-button"

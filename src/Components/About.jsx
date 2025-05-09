@@ -3,15 +3,12 @@ import "../css/About.css";
 
 export const About = () => {
   const technologies = [
-    { name: "React", link: "https://reactjs.org/" },
-    { name: "Node.js", link: "https://nodejs.org/" },
-    { name: "Azure", link: "https://azure.microsoft.com/" },
-    {
-      name: "SQL Server",
-      link: "https://learn.microsoft.com/en-us/sql/sql-server/",
-    },
-    { name: "Wireshark", link: "https://www.wireshark.org/" },
-    { name: "HackRF", link: "https://greatscottgadgets.com/hackrf/" },
+    { name: "React" },
+    { name: "Node.js" },
+    { name: "Azure" },
+    { name: "SQL Server" },
+    { name: "Wireshark" },
+    { name: "HackRF" },
   ];
 
   return (

@@ -17,25 +17,25 @@ export const Team = () => {
       name: "Dr. Nimal Skandakumara",
       role: "Supervisor",
       image: "https://placehold.co/400x400",
-      link: "https://github.com/lakshan",
+      link: "https://scholar.google.com.au/citations?user=H0twqLkAAAAJ&hl=en",
     },
     {
       name: "Dr. Nuwan Kuruwitaarachchi",
       role: "Co-Supervisor",
       image: "https://placehold.co/400x400",
-      link: "https://github.com/nimal",
+      link: "https://scholar.google.com/citations?user=bb1ZTwsAAAAJ&hl=en",
     },
     {
       name: "V. O. Gallage",
       role: "Team Member",
       image: "https://placehold.co/400x400",
-      link: "https://sasindu.dev",
+      link: "",
     },
     {
       name: "R. A. H. S. Thathsarani",
       role: "Team Member",
       image: "https://placehold.co/400x400",
-      link: "https://dribbble.com/dilshan",
+      link: "",
     },
   ];
 
