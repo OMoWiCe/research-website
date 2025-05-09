@@ -40,7 +40,16 @@ const Navbar = () => {
           onClick={() => isMobile && setMenuOpen(false)}
         >
           {menuItems.map((item, idx) => (
-            <li key={idx}>
+            <li
+              key={idx}
+              onClick={() => {
+                document
+                  .querySelector(item.link)
+                  .scrollIntoView({ behavior: "smooth" });
+                isMobile && setMenuOpen(false);
+              }}
+              style={{ cursor: "pointer" }}
+            >
               <a href={item.link} className="navbar-link">
                 {item.name}
               </a>

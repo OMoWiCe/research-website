@@ -35,10 +35,6 @@ a {
   transition: color var(--transition-fast);
 }
 
-a:hover {
-  color: var(--btn-hover);
-}
-
 button {
   cursor: pointer;
   font-family: "Outfit", Arial, Helvetica, sans-serif;

@@ -3,15 +3,25 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: var(--text-dark);
-  padding: 60px 40px;
+  padding: 60px 20px;
   border-radius: 20px;
-  margin: 60px auto;
+  margin: 60px 20px;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
   gap: 40px;
   font-family: "Outfit", sans-serif;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    padding: 60px 40px;
+    margin: 60px auto;
+  }
+  .tech-btn {
+    margin: 5px 5px;
+  }
 }
 
 .about-heading {
@@ -55,6 +65,28 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 25px 20px;
+  }
+  .about-card {
+    padding: 20px;
+    margin: 0 -5px;
+  }
+
+  .about-heading {
+    font-size: var(--font-2xl);
+  }
+
+  .about-title {
+    font-size: var(--font-lg);
+  }
+  .tech-btn {
+    margin: 3px 3px;
+  }
 }
 
 .about-card:hover {
@@ -65,7 +97,7 @@
 .about-title {
   font-size: var(--font-xl);
   font-weight: 600;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
   color: var(--text-dark);
   display: flex;
   align-items: center;
@@ -105,7 +137,7 @@
   border: none;
   border-radius: 50px;
   padding: 10px 20px;
-  margin: 8px 5px;
+
   font-size: var(--font-md);
   font-weight: 500;
   text-decoration: none;
