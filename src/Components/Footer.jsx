@@ -19,9 +19,32 @@ const Footer = () => {
           <div className="modal">
             <h3>🔒 Privacy Policy</h3>
             <p className="modal-content">
-              We value your privacy. This project does not store personal data
-              and is strictly used for academic and research purposes only. Any
-              data shown is simulated or anonymized.
+              <ul>
+                <li>
+                  <span>Purpose:</span> Data collection is conducted exclusively
+                  for academic research to evaluate WiFi and Cellular
+                  signal-based occupancy monitoring techniques.
+                </li>
+                <li>
+                  <span>Data Scope:</span> Only publicly broadcasted and
+                  available data is used. No attempt is made to decrypt or
+                  access encrypted communications.
+                </li>
+                <li>
+                  <span>Data Protection:</span> All identifiers (e.g., MAC
+                  addresses) are obfuscated using salted hashing prior to
+                  transmission.
+                </li>
+                <li>
+                  <span>Transmission Security:</span> Data is transmitted over
+                  encrypted channels to prevent interception or misuse.
+                </li>
+                <li>
+                  <span>User Tracking:</span> The system does not track or
+                  identify individuals. All data is processed in aggregate for
+                  occupancy estimation only.
+                </li>
+              </ul>
             </p>
             <button className="close-btn" onClick={() => setShowPolicy(false)}>
               Close

@@ -32,9 +32,11 @@ export const About = () => {
         <div className="about-card">
           <h3 className="about-title">📘 Disclaimer</h3>
           <p className="about-text">
-            This dashboard is for academic research purposes only. Occupancy
-            visualizations rely on selected testing environments and may not
-            reflect live or production-grade accuracy.
+            This system is developed solely for academic purposes to test the
+            viability of signal-based occupancy monitoring. It is not intended
+            for commercial deployment or real-time surveillance. All efforts
+            have been made to ensure ethical data handling and compliance with
+            privacy standards.
           </p>
         </div>
       </div>
