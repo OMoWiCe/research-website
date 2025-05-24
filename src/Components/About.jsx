@@ -3,12 +3,22 @@ import "../css/About.css";
 
 export const About = () => {
   const technologies = [
-    { name: "React" },
-    { name: "Node.js" },
-    { name: "Azure" },
-    { name: "SQL Server" },
-    { name: "Wireshark" },
-    { name: "HackRF" },
+    { name: "Python" },
+    { name: "Dragon OS" },
+    { name: "Kismet" },
+    { name: "GR-GSM" },
+    { name: "Raspberry Pi" },
+    { name: "HackRF One" },
+    { name: "ReactJS" },
+    { name: "NodeJS" },
+    { name: "TypeScript" },
+    { name: "Azure IoT Hub" },
+    { name: "Azure Functions" },
+    { name: "Azure SQL Database" },
+    { name: "Azure API Management" },
+    { name: "Azure Static Web Apps" },
+    { name: "Azure Stream Analytics" },
+    { name: "Azure Data Lake" },
   ];
 
   return (

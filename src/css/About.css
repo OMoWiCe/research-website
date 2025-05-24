@@ -198,6 +198,10 @@
 .tech-container {
   text-align: center;
   margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
 }
 
 @keyframes pulse {
