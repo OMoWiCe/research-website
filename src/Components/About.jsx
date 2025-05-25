@@ -91,7 +91,7 @@ export const About = () => {
           <p className="github-link">
             GitHub:{" "}
             <a
-              href="https://github.com/orgs/OMoWiCe/repositories"
+              href="https://github.com/OMoWiCe"
               target="_blank"
               rel="noopener noreferrer"
             >
