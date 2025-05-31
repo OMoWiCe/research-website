@@ -20,7 +20,7 @@ export const Home = () => {
         </div>
         <div className="home-image">
           <img
-            src="./images/preview.png"
+            src="./images/landing-image.png"
             alt="Occupancy Monitoring"
             className="home-image-placeholder"
           />
