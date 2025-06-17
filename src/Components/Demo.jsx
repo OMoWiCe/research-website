@@ -31,7 +31,7 @@ export const Demo = () => {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            src="https://www.youtube.com/embed/oWiuIgRu1SM?autoplay=0&mute=1&controls=1"
             title="Demo Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
